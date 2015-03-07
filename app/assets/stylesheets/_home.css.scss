@@ -1,18 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
-}
-.container {
-  width: 1024px;
-  max-width: 100%;
+.logo-img {
+  display: block;
   margin: 0 auto;
 }
 .portfolio-nav {
-  text-align: center;
   width: 100%;
-  margin-top: 100px;
+  margin: 30px auto 100px auto;
+  text-align: center;
 }
 .portfolio-section {
   display: inline-block;
@@ -33,7 +26,6 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   transition: all 300ms ease-in-out;
-
 
   &:after {
     content: "";
@@ -70,59 +62,5 @@ body {
     }
   }
 }
-.logo-img {
-  display: block;
-  margin: 0 auto;
-}
 
 
-#social-symbols {
-  display: none;
-}
-.social-icons {
-  text-align: center;
-}
-.social-icon {
-  display: inline-block;
-
-  width: 28px;
-  height: 28px;
-  margin: 0 4px;
-  border-radius: 50%;
-
-  position: relative;
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-.social-icon .social-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.social-icon .social-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.use-background,
-.use-icon,
-.use-mask {
-  transition: fill 170ms ease-in-out;
-  fill: transparent;
-}
-.use-mask {
-  fill: #0f0b0b;
-}
-
-.social-icon:hover {
-  .use-mask {
-    fill: orange;
-  }
-}
